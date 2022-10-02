@@ -1,0 +1,30 @@
+[rpmfusion-nonfree-updates]
+name=RPM Fusion for Fedora RELEASEVER - Nonfree - Updates
+#baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/RELEASEVER/$basearch/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=nonfree-fedora-updates-released-RELEASEVER&arch=$basearch
+enabled=0
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-nonfree-fedora-RELEASEVER
+
+[rpmfusion-nonfree-updates-debuginfo]
+name=RPM Fusion for Fedora RELEASEVER - Nonfree - Updates Debug
+#baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/RELEASEVER/$basearch/debug/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=nonfree-fedora-updates-released-debug-RELEASEVER&arch=$basearch
+enabled=0
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-nonfree-fedora-RELEASEVER
+
+[rpmfusion-nonfree-updates-source]
+name=RPM Fusion for Fedora RELEASEVER - Nonfree - Updates Source
+#baseurl=http://download1.rpmfusion.org/nonfree/fedora/updates/RELEASEVER/SRPMS/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=nonfree-fedora-updates-released-source-RELEASEVER&arch=$basearch
+enabled=0
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-nonfree-fedora-RELEASEVER
+

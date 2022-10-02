@@ -1,0 +1,155 @@
+include: fedora-base.yaml
+
+ref: mt190502-RELEASEVER-DATETIME
+rojig:
+  name: mt190502-s-environment
+  summary: "MT190502's Environment"
+  license: MIT
+
+repos:
+  - fedora-RELEASEVER
+  - fedora-RELEASEVER-updates
+  #- rpmfusion-free-updates
+  #- rpmfusion-free
+  #- rpmfusion-nonfree-updates
+  #- rpmfusion-nonfree
+
+packages:
+  - bluez
+  - brightnessctl
+  - feh
+  #- ffmpeg
+  #- ffmpegthumbnailer
+  - fish
+  - fpaste
+  - gnome-keyring
+  - grim
+  - ImageMagick
+  - kitty
+  - libappindicator
+  - libdbusmenu
+  - lm_sensors
+  - lxappearance
+  - mako
+  - pavucontrol
+  - python3-pip
+  - playerctl
+  - polkit
+  - polkit-gnome
+  - slurp
+  - swappy
+  - sway
+  - swaylock
+  - tree
+  - waybar
+  - wl-clipboard
+  - wofi
+  - xdg-desktop-portal
+  - xdg-desktop-portal-kde
+  - xdg-desktop-portal-wlr
+  - xdpyinfo
+  - xorg-x11-server-Xwayland
+  - zenity
+
+exclude-packages:
+  - alacritty
+  - alsa-sof-firmware
+  - alsa-utils
+  - b43-fwcutter
+  - b43-openfwwf
+  - brltty
+  - chrony
+  - cifs-utils
+  - compsize
+  - dmenu
+  - ethtool
+  - firefox
+  - foot
+  - foot-terminfo
+  - fros-gnome
+  - gamemode
+  - glibc-all-langpacks
+  - google-noto-emoji-color-fonts
+  - google-noto-naskh-arabic-vf-fonts
+  - google-noto-sans-arabic-vf-fonts
+  - google-noto-sans-armenian-vf-fonts
+  - google-noto-sans-canadian-aboriginal-vf-fonts
+  - google-noto-sans-cherokee-vf-fonts
+  - google-noto-sans-cjk-ttc-fonts
+  - google-noto-sans-ethiopic-vf-fonts
+  - google-noto-sans-georgian-vf-fonts
+  - google-noto-sans-gurmukhi-vf-fonts
+  - google-noto-sans-hebrew-vf-fonts
+  - google-noto-sans-lao-vf-fonts
+  - google-noto-sans-mono-vf-fonts
+  - google-noto-sans-sinhala-vf-fonts
+  - google-noto-sans-thaana-vf-fonts
+  - google-noto-serif-vf-fonts
+  - gutenprint
+  - hfsplus-tools
+  - hplip
+  - hyperv-daemons
+  - ibus-anthy
+  - ibus-hangul
+  - ibus-libpinyin
+  - ibus-libzhuyin
+  - ibus-m17n
+  - intel-gpu-firmware
+  - jomolhari-fonts
+  - khmer-os-system-fonts
+  - libertas-sd8686-firmware
+  - libertas-sd8787-firmware
+  - libertas-usb8388-firmware
+  - lohit-assamese-fonts
+  - lohit-bengali-fonts
+  - lohit-devanagari-fonts
+  - lohit-kannada-fonts
+  - lohit-odia-fonts
+  - lohit-tamil-fonts
+  - lohit-telugu-fonts
+  - lrzsz
+  - lsof
+  - man-pages
+  - mpage
+  - mtr
+  - nvidia-gpu-firmware
+  - opensc
+  - open-vm-tools-desktop
+  - paktype-naskh-basic-fonts
+  - paps
+  - pinfo
+  - plymouth
+  - plymouth-system-theme
+  - qemu-guest-agent
+  - realmd
+  - rit-meera-new-fonts
+  - rsync
+  - sil-nuosu-fonts
+  - sil-padauk-fonts
+  - sos
+  - spice-vdagent
+  - spice-webdavd
+  - sssd
+  - sssd-common
+  - sssd-kcm
+  - stix-fonts
+  - thai-scalable-waree-fonts
+  - thermald
+  - usb_modeswitch
+  - virtualbox-guest-additions
+  - whois
+  - xorg-x11-drv-evdev
+  - xorg-x11-drv-fbdev
+  - xorg-x11-drv-intel
+  - xorg-x11-drv-nouveau
+  - xorg-x11-drv-openchrome
+  - xorg-x11-drv-qxl
+  - xorg-x11-drv-vesa
+  - xorg-x11-drv-vmware
+  - xorg-x11-drv-wacom
+  - xorg-x11-xauth
+  - xorg-x11-xinit
+  - zd1211-firmware
+
+
+postprocess-script: postscript.sh
