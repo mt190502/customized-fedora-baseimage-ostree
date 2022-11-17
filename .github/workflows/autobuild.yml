@@ -12,7 +12,10 @@ jobs:
       options: --privileged --security-opt label:disable
     steps:
       - name: Install dependencies
-        run: dnf --refresh install -y rpm-ostree selinux-policy selinux-policy-targeted policycoreutils curl wget git
+        run: dnf --refresh install -y rpm-ostree selinux-policy selinux-policy-targeted policycoreutils curl wget git neofetch
+        
+      - name: Show systeminfo
+        run: neofetch && df -h
 
       - name: Clone repository
         uses: actions/checkout@v2
